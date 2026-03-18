@@ -13,6 +13,7 @@ cask "mic-guard" do
   binary "bin/mic-guard"
 
   postflight do
+    system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "/Applications/MicGuard.app"]
     system_command "open", args: ["/Applications/MicGuard.app"]
   end
 
