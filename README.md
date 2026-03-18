@@ -8,15 +8,14 @@ Personal Homebrew tap for [pszypowicz](https://github.com/pszypowicz).
 brew tap pszypowicz/tap
 ```
 
-## Formulae
+## Casks
 
-| Formula | Description |
-|---------|-------------|
+| Cask | Description |
+|------|-------------|
 | `mic-guard` | Prevents Bluetooth devices from hijacking the default macOS microphone |
 
 ### mic-guard
 
 ```bash
-brew install mic-guard
-brew services start mic-guard
+brew install --cask mic-guard
 ```
