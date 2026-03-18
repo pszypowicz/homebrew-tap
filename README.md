@@ -12,11 +12,11 @@ brew tap pszypowicz/tap
 
 | Formula | Description |
 |---------|-------------|
-| `audio-guard` | Prevents Bluetooth devices from hijacking the default macOS microphone |
+| `mic-guard` | Prevents Bluetooth devices from hijacking the default macOS microphone |
 
-### audio-guard
+### mic-guard
 
 ```bash
-brew install audio-guard
-brew services start audio-guard
+brew install mic-guard
+brew services start mic-guard
 ```
