@@ -12,8 +12,10 @@ cask "mic-guard" do
   app "MicGuard.app"
   binary "bin/mic-guard"
 
+  uninstall quit:       "com.pszypowicz.MicGuard",
+            on_upgrade: :quit
+
   postflight do
-    system_command "/usr/bin/pkill", args: ["-x", "MicGuard"], must_succeed: false
     system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "/Applications/MicGuard.app"]
     system_command "open", args: ["/Applications/MicGuard.app"]
   end
