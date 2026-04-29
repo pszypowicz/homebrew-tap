@@ -22,6 +22,8 @@ cask "aerospace-bsp-prototype" do
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/AeroSpace.app"]
+    system_command "/usr/bin/xattr",
+                   args: ["-d", "com.apple.quarantine", "#{staged_path}/aerospace"]
   end
 
   uninstall quit:       "bobko.aerospace",
