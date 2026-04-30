@@ -8,7 +8,6 @@ cask "aerospace-bsp" do
   homepage "https://github.com/pszypowicz/AeroSpace"
 
   conflicts_with cask: "nikitabobko/tap/aerospace"
-  conflicts_with cask: "pszypowicz/tap/aerospace-bsp-prototype"
 
   # Versioning scheme: <upstream-anchor>-bsp.<N>. <anchor> is the next upstream
   # tag this fork is heading toward; <N> is the tap release counter, bumped on
