@@ -1,6 +1,6 @@
 cask "aerospace-bsp" do
-  version "0.21.0-bsp.1"
-  sha256 "ca850163b33bffa69dbd86f49e08c430fe2e568e6c3e107053178badcd0b4a1e"
+  version "0.21.0-bsp.2"
+  sha256 "f17557c993ed6474b3a2cdb2fa441756ef16d4a93e676b23d2df9369470b542d"
 
   url "https://github.com/pszypowicz/AeroSpace/releases/download/v#{version}/AeroSpace-v#{version}.zip"
   name "AeroSpace (BSP fork)"
