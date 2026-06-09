@@ -16,7 +16,7 @@ cask "aerospace-bsp" do
   # ship at the author's discretion - auto-tracking would silently move
   # testers onto untested binaries.
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "AeroSpace-v#{version}/AeroSpace.app"
   binary "AeroSpace-v#{version}/bin/aerospace"

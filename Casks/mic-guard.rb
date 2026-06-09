@@ -12,7 +12,7 @@ cask "mic-guard" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "MicGuard.app"
   binary "bin/mic-guard"
