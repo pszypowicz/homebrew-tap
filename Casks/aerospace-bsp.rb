@@ -1,26 +1,23 @@
 cask "aerospace-bsp" do
-  version "0.21.0-bsp.2"
-  sha256 "f17557c993ed6474b3a2cdb2fa441756ef16d4a93e676b23d2df9369470b542d"
-
-  url "https://github.com/pszypowicz/AeroSpace/releases/download/v#{version}/AeroSpace-v#{version}.zip"
-  name "AeroSpace (BSP fork)"
-  desc "AeroSpace fork: BSP-shape normalization + per-workspace normalization toggling + resize stability fixes"
-  homepage "https://github.com/pszypowicz/AeroSpace"
-
-  conflicts_with cask: "nikitabobko/tap/aerospace"
-
   # Versioning scheme: <upstream-anchor>-bsp.<N>. <anchor> is the next upstream
   # tag this fork is heading toward; <N> is the tap release counter, bumped on
   # every published artifact. Homebrew compares "bsp.5 > bsp.4" correctly so
   # users get upgrades on `brew upgrade`. No livecheck because fork releases
   # ship at the author's discretion - auto-tracking would silently move
   # testers onto untested binaries.
+  version "0.21.0-bsp.2"
+  sha256 "f17557c993ed6474b3a2cdb2fa441756ef16d4a93e676b23d2df9369470b542d"
 
+  url "https://github.com/pszypowicz/AeroSpace/releases/download/v#{version}/AeroSpace-v#{version}.zip"
+  name "AeroSpace (BSP fork)"
+  desc "AeroSpace fork: BSP normalization, per-workspace toggling, resize fixes"
+  homepage "https://github.com/pszypowicz/AeroSpace"
+
+  conflicts_with cask: "nikitabobko/tap/aerospace"
   depends_on macos: :sonoma
 
   app "AeroSpace-v#{version}/AeroSpace.app"
   binary "AeroSpace-v#{version}/bin/aerospace"
-
   binary "AeroSpace-v#{version}/shell-completion/zsh/_aerospace",
          target: "#{HOMEBREW_PREFIX}/share/zsh/site-functions/_aerospace"
   binary "AeroSpace-v#{version}/shell-completion/bash/aerospace",

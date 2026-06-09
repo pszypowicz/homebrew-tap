@@ -1,0 +1,16 @@
+name: brew test-bot
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-bot:
+    runs-on: macos-latest
+    steps:
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Lint tap syntax (style + audit)
+        run: brew test-bot --only-tap-syntax

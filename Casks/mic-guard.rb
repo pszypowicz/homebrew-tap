@@ -23,8 +23,7 @@ cask "mic-guard" do
   end
 
   uninstall quit:       "com.pszypowicz.MicGuard",
-            login_item: "MicGuard",
-            on_upgrade: :quit
+            login_item: "MicGuard"
 
   zap trash: [
     "~/.config/mic-guard",
