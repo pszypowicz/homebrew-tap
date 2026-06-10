@@ -5,8 +5,8 @@ cask "aerospace-bsp" do
   # users get upgrades on `brew upgrade`. No livecheck because fork releases
   # ship at the author's discretion - auto-tracking would silently move
   # testers onto untested binaries.
-  version "0.21.0-bsp.2"
-  sha256 "f17557c993ed6474b3a2cdb2fa441756ef16d4a93e676b23d2df9369470b542d"
+  version "0.21.0-bsp.3"
+  sha256 "820ebf032336413abce0fdb837678e4d489752ee95dd0ebc2fbbf91ca7acf718"
 
   url "https://github.com/pszypowicz/AeroSpace/releases/download/v#{version}/AeroSpace-v#{version}.zip"
   name "AeroSpace (BSP fork)"
