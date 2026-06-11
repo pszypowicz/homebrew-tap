@@ -8,6 +8,20 @@ Personal Homebrew tap for [pszypowicz](https://github.com/pszypowicz).
 brew tap pszypowicz/tap
 ```
 
+## Formulae
+
+| Formula         | Description                                                                |
+| --------------- | -------------------------------------------------------------------------- |
+| `afm-summarize` | Summarize stdin into one sentence with Apple's on-device Foundation Models |
+
+### afm-summarize
+
+```bash
+brew install pszypowicz/tap/afm-summarize
+```
+
+Requires macOS 26 (Tahoe) or later on Apple Silicon with Apple Intelligence enabled.
+
 ## Casks
 
 | Cask            | Description                                                             |
