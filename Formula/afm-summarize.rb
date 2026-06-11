@@ -2,7 +2,6 @@ class AfmSummarize < Formula
   desc "Summarize stdin into one sentence with Apple's on-device Foundation Models"
   homepage "https://github.com/pszypowicz/afm-summarize"
   url "https://github.com/pszypowicz/afm-summarize/releases/download/v0.0.1/afm-summarize-0.0.1-arm64-macos.tar.gz"
-  version "0.0.1"
   sha256 "e184d8ed1352916c5fde6c3f0de81d72c516cb2c10beafa2f6fc37bc027ad1d6"
   license "MIT"
 
