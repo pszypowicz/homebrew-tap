@@ -10,7 +10,7 @@ cask "aerospace-bsp" do
 
   url "https://github.com/pszypowicz/AeroSpace/releases/download/v#{version}/AeroSpace-v#{version}.zip"
   name "AeroSpace (BSP fork)"
-  desc "AeroSpace fork: BSP normalization, per-workspace toggling, resize fixes"
+  desc "AeroSpace fork: BSP normalization, per-workspace toggling, resize and stuck-window fixes"
   homepage "https://github.com/pszypowicz/AeroSpace"
 
   conflicts_with cask: "nikitabobko/tap/aerospace"

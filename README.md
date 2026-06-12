@@ -26,7 +26,7 @@ Requires macOS 26 (Tahoe) or later on Apple Silicon with Apple Intelligence enab
 
 | Cask            | Description                                                             |
 | --------------- | ----------------------------------------------------------------------- |
-| `aerospace-bsp` | AeroSpace window manager (BSP fork) with normalization and resize fixes |
+| `aerospace-bsp` | AeroSpace window manager (BSP fork) with normalization, resize, and stuck-window fixes |
 | `mic-guard`     | Prevents Bluetooth devices from hijacking the default macOS microphone  |
 
 ### aerospace-bsp
