@@ -24,10 +24,11 @@ Requires macOS 26 (Tahoe) or later on Apple Silicon with Apple Intelligence enab
 
 ## Casks
 
-| Cask            | Description                                                             |
-| --------------- | ----------------------------------------------------------------------- |
+| Cask            | Description                                                                            |
+| --------------- | -------------------------------------------------------------------------------------- |
 | `aerospace-bsp` | AeroSpace window manager (BSP fork) with normalization, resize, and stuck-window fixes |
-| `mic-guard`     | Prevents Bluetooth devices from hijacking the default macOS microphone  |
+| `cyclist`       | Text-only Cmd+Tab app switcher with instant Space navigation                           |
+| `mic-guard`     | Prevents Bluetooth devices from hijacking the default macOS microphone                 |
 
 ### aerospace-bsp
 
@@ -36,6 +37,12 @@ brew install --cask aerospace-bsp
 ```
 
 Conflicts with the upstream `nikitabobko/tap/aerospace` cask - uninstall that first.
+
+### cyclist
+
+```bash
+brew install --cask cyclist
+```
 
 ### mic-guard
 
