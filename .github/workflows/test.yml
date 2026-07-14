@@ -1,4 +1,4 @@
-name: brew test-bot
+name: pre-commit
 
 on:
   push:
@@ -6,11 +6,17 @@ on:
   pull_request:
 
 jobs:
-  test-bot:
+  pre-commit:
     runs-on: macos-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
 
-      - name: Lint tap syntax (style + audit)
-        run: brew test-bot --only-tap-syntax
+      - name: Install pre-commit
+        run: brew install pre-commit
+
+      - name: Run pre-commit on all files
+        run: pre-commit run --all-files --show-diff-on-failure

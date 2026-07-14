@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: tap-syntax
+        name: brew tap syntax (style, readall, audit)
+        entry: scripts/check-tap-syntax.sh
+        language: script
+        files: '\.(rb|sh|ya?ml)$'
+        pass_filenames: false

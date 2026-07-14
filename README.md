@@ -49,3 +49,12 @@ brew install --cask cyclist
 ```bash
 brew install --cask mic-guard
 ```
+
+## Development
+
+Local commits and CI run the same checks through [pre-commit](https://pre-commit.com): `scripts/check-tap-syntax.sh` lints the working tree with `brew style`, `brew readall`, and `brew audit` (the `brew test-bot --only-tap-syntax` set). To catch failures before they are committed:
+
+```bash
+brew install pre-commit
+pre-commit install
+```
