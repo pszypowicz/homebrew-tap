@@ -1,8 +1,8 @@
 class Brightsync < Formula
   desc "Mirror built-in display brightness to external displays over DDC/CI"
   homepage "https://github.com/pszypowicz/brightsync"
-  url "https://github.com/pszypowicz/brightsync/releases/download/v0.1.0/brightsync-0.1.0-arm64-macos.tar.gz"
-  sha256 "66f1dedf091da99ffaac2e9d8fdca651937cb7d7325b4a579dd4b4559f33ca91"
+  url "https://github.com/pszypowicz/brightsync/releases/download/v0.1.1/brightsync-0.1.1-arm64-macos.tar.gz"
+  sha256 "9f24dfe420a27c7a36f4af7d9303eecf7bd4c899eaa74712872afa7f6e33d276"
   license "MIT"
 
   livecheck do
