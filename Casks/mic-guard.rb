@@ -1,6 +1,6 @@
 cask "mic-guard" do
-  version "0.15.0"
-  sha256 "ee413fa8aac24e5cf260a97fd46906eac8828f35f6ed405f9adc0821d3cd7c67"
+  version "0.16.0"
+  sha256 "eb64b4f2c1431ef4bae0f4471c7953f630c3bb632295cb08920adb8352024330"
 
   url "https://github.com/pszypowicz/MicGuard/releases/download/v#{version}/MicGuard.zip"
   name "MicGuard"
@@ -15,18 +15,18 @@ cask "mic-guard" do
   depends_on macos: :sequoia
 
   app "MicGuard.app"
-  binary "bin/mic-guard"
 
   postflight do
     system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "/Applications/MicGuard.app"]
     system_command "open", args: ["/Applications/MicGuard.app"]
   end
 
-  uninstall quit:       "com.pszypowicz.MicGuard",
+  uninstall quit:       "cz.szypowi.micguard",
             login_item: "MicGuard"
 
   zap trash: [
     "~/.config/mic-guard",
-    "~/Library/Caches/com.pszypowicz.MicGuard",
+    "~/Library/Caches/cz.szypowi.micguard",
+    "~/Library/Preferences/cz.szypowi.micguard.plist",
   ]
 end
