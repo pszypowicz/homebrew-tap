@@ -1,6 +1,6 @@
 cask "cyclist" do
-  version "0.3.1"
-  sha256 "dc80507c232bb59dcbda68d553be8f53d6403506eee10bf6ec046a533cbe80eb"
+  version "0.4.0"
+  sha256 "dfa8cb8e790e4456c45746dbb019397129dc92f87733176b7160801bf32807d1"
 
   url "https://github.com/pszypowicz/cyclist/releases/download/v#{version}/Cyclist.zip"
   name "Cyclist"
@@ -12,7 +12,7 @@ cask "cyclist" do
     strategy :github_latest
   end
 
-  depends_on macos: :ventura
+  depends_on macos: :tahoe
 
   app "Cyclist.app"
 
@@ -25,6 +25,7 @@ cask "cyclist" do
             login_item: "Cyclist"
 
   zap trash: [
+    "~/.config/cyclist",
     "~/Library/Logs/Cyclist.log",
     "~/Library/Preferences/io.github.pszypowicz.Cyclist.plist",
   ]
