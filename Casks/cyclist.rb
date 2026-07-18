@@ -27,6 +27,5 @@ cask "cyclist" do
     "~/.config/cyclist",
     "~/Library/Logs/Cyclist.log",
     "~/Library/Preferences/cz.szypowi.cyclist.plist",
-    "~/Library/Preferences/io.github.pszypowicz.Cyclist.plist",
   ]
 end
