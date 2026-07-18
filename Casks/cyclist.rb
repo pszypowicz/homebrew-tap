@@ -1,6 +1,6 @@
 cask "cyclist" do
-  version "0.6.1"
-  sha256 "973b4ec446968948bffa981b7419bf4a69a56fb246e38aff172269b9aceddf7c"
+  version "0.6.2"
+  sha256 "75974b1c2d08b981fc871ddf77a80dbc9f0b03e20fef63f2ff82ee8267657b55"
 
   url "https://github.com/pszypowicz/cyclist/releases/download/v#{version}/Cyclist.zip"
   name "Cyclist"
