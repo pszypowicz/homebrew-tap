@@ -1,6 +1,6 @@
 cask "mic-guard" do
-  version "0.16.0"
-  sha256 "eb64b4f2c1431ef4bae0f4471c7953f630c3bb632295cb08920adb8352024330"
+  version "0.17.0"
+  sha256 "f8331942ca95a83345018d4b4ee176cba89304996726079acc8fd065d3902c4f"
 
   url "https://github.com/pszypowicz/MicGuard/releases/download/v#{version}/MicGuard.zip"
   name "MicGuard"
@@ -17,7 +17,6 @@ cask "mic-guard" do
   app "MicGuard.app"
 
   postflight do
-    system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "/Applications/MicGuard.app"]
     system_command "open", args: ["/Applications/MicGuard.app"]
   end
 
