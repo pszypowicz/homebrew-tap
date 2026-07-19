@@ -16,6 +16,10 @@ cask "bright-sync" do
   depends_on macos: :tahoe
 
   app "BrightSync.app"
+  # The app's own executable doubles as the `brightsync` CLI (--list,
+  # --set-external, ...). Homebrew symlinks it onto PATH and removes it on
+  # uninstall.
+  binary "#{appdir}/BrightSync.app/Contents/MacOS/BrightSync", target: "brightsync"
 
   postflight do
     system_command "open", args: ["-g", "/Applications/BrightSync.app"]
