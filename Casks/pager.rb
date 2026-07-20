@@ -1,6 +1,6 @@
 cask "pager" do
-  version "0.1.1"
-  sha256 "7ae81a7be8558640bf9a9acf82608877465b4cad493a6db6c99e05c59339dcd2"
+  version "0.1.2"
+  sha256 "16b75afb809ab3f6b7f77c01a4b5ab4783a4b1773c4867a1c057e5e1b9554126"
 
   url "https://github.com/pszypowicz/pager/releases/download/v#{version}/Pager.zip"
   name "Pager"
