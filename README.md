@@ -24,11 +24,12 @@ Requires macOS 26 (Tahoe) or later on Apple Silicon with Apple Intelligence enab
 
 ## Casks
 
-| Cask            | Description                                                                            |
-| --------------- | -------------------------------------------------------------------------------------- |
-| `aerospace-bsp` | AeroSpace window manager (BSP fork) with normalization, resize, and stuck-window fixes |
-| `cyclist`       | Text-only Cmd+Tab app switcher with instant Space navigation                           |
-| `mic-guard`     | Prevents Bluetooth devices from hijacking the default macOS microphone                 |
+| Cask               | Description                                                                              |
+| ------------------ | ---------------------------------------------------------------------------------------- |
+| `aerospace-bsp`    | AeroSpace window manager (BSP fork) with normalization, resize, and stuck-window fixes   |
+| `cyclist`          | Text-only Cmd+Tab app switcher with instant Space navigation                             |
+| `mic-guard`        | Prevents Bluetooth devices from hijacking the default macOS microphone                   |
+| `ghostty-gestures` | Ghostty terminal fork with configurable trackpad gestures (pinch, two-finger double-tap) |
 
 ### aerospace-bsp
 
@@ -49,6 +50,14 @@ brew install --cask cyclist
 ```bash
 brew install --cask mic-guard
 ```
+
+### ghostty-gestures
+
+```bash
+brew install --cask ghostty-gestures
+```
+
+Ghostty fork with config-driven trackpad gestures. Conflicts with the official `ghostty` cask - uninstall that first. Ad-hoc signed, so it ships with auto-update disabled.
 
 ## Development
 
