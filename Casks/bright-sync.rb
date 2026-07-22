@@ -1,6 +1,6 @@
 cask "bright-sync" do
-  version "0.5.0"
-  sha256 "6aee916859ecdf75ca15e391284d703dc411c1b8113f2db5ede8535e787040f6"
+  version "0.6.0"
+  sha256 "f035d069a6413cc035fe656653ce33d48352ee1a9e99bab9abf3f09c2d1c72cd"
 
   url "https://github.com/pszypowicz/BrightSync/releases/download/v#{version}/BrightSync-#{version}.zip"
   name "BrightSync"
