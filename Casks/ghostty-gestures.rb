@@ -6,8 +6,8 @@ cask "ghostty-gestures" do
   # "gestures.2 > gestures.1" correctly so `brew upgrade` works. No livecheck:
   # fork releases ship at the author's discretion, so auto-tracking would
   # silently move testers onto untested binaries.
-  version "1.3.2-gestures.4"
-  sha256 "fe98bf5448dec8e1c3fd5e7402f6d60eda1fbf2ca7cd27e27653e26dfa0c1e58"
+  version "1.3.2-gestures.5"
+  sha256 "234c2450a64b1d1a65114f0ac48b4793bef7366b3ef20e63c4bb2219983f89d1"
 
   url "https://github.com/pszypowicz/ghostty/releases/download/v#{version}/Ghostty-gestures-v#{version}.zip"
   name "Ghostty (gestures fork)"
