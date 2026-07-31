@@ -1,19 +1,20 @@
 cask "ghostty-personal" do
   # Personal Ghostty fork build: config-driven trackpad gestures (pinch,
-  # two-finger double-tap, swipes) plus the tmux_command keybind action,
-  # with the Sparkle auto-update stack removed - updates ship through this
+  # two-finger double-tap, swipes) plus gesture reporting mode (DEC 2035,
+  # decoded by the tmux-personal formula in this tap), with the Sparkle
+  # auto-update stack removed - updates ship through this
   # tap. Versioning scheme: <upstream-anchor>-personal.<N>. <anchor> is the
   # upstream version the fork tracks; <N> is the tap release counter,
   # bumped on every published artifact. Homebrew compares
   # "personal.2 > personal.1" correctly so `brew upgrade` works. No
   # livecheck: fork releases ship at the author's discretion, so
   # auto-tracking would silently move testers onto untested binaries.
-  version "1.3.2-personal.5"
-  sha256 "bd99edeb83278d77546b668a6bf57fd012f509ade9d295a6aa5ba5f187bf8d9a"
+  version "1.3.2-personal.6"
+  sha256 "137d9254e111ba4df349e94d1ec78cee313fead3800ba990b3e5429a0c8c258f"
 
   url "https://github.com/pszypowicz/ghostty/releases/download/v#{version}/Ghostty-personal-v#{version}.zip"
   name "Ghostty (personal fork)"
-  desc "Ghostty terminal fork with trackpad gestures and tmux socket actions"
+  desc "Ghostty terminal fork with trackpad gestures and gesture reporting"
   homepage "https://github.com/pszypowicz/ghostty"
 
   # The Sparkle updater is compiled out of this build, so in-app updates
