@@ -1,7 +1,7 @@
 cask "ghostty-personal" do
   # Personal Ghostty fork build: config-driven trackpad gestures (pinch,
   # two-finger double-tap, swipes) plus gesture reporting mode (DEC 2035,
-  # decoded by the tmux-personal formula in this tap), with the Sparkle
+  # decoded by the tmux-gestures formula in this tap), with the Sparkle
   # auto-update stack removed - updates ship through this
   # tap. Versioning scheme: <upstream-anchor>-personal.<N>. <anchor> is the
   # upstream version the fork tracks; <N> is the tap release counter,

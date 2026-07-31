@@ -1,15 +1,15 @@
-class TmuxPersonal < Formula
+class TmuxGestures < Formula
   desc "Tmux fork with trackpad gesture reporting (DEC 2035)"
   homepage "https://github.com/pszypowicz/tmux"
-  url "https://github.com/pszypowicz/tmux/archive/refs/tags/v3.8-personal.1.tar.gz"
-  version "3.8-personal.1"
-  sha256 "2afaf4997d7b475425826e931a912159dd1f7fb8836eced620b5741d24687347"
+  url "https://github.com/pszypowicz/tmux/archive/refs/tags/v3.8-gestures.1.tar.gz"
+  version "3.8-gestures.1"
+  sha256 "75cbfa84374fe2e152bcff525c60fe1ef0c27a909f4f4a2bd240b04b9ad3b1c4"
   license "ISC"
 
   # Decodes gesture escape sequences emitted by the ghostty-personal
   # build into bindable keys (Swipe2Left, PinchIn, SmartMagnify, ...);
   # see PROTOCOL-GESTURES.md in the source tree. Versioning follows the
-  # tap convention <upstream-anchor>-personal.<N> against the upstream
+  # tap convention <upstream-anchor>-gestures.<N> against the upstream
   # next-3.8 development version. tmux -V reports next-3.8; the tap
   # version is authoritative for upgrades.
   depends_on "autoconf" => :build
