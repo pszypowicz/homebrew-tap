@@ -8,8 +8,8 @@ cask "ghostty-personal" do
   # "personal.2 > personal.1" correctly so `brew upgrade` works. No
   # livecheck: fork releases ship at the author's discretion, so
   # auto-tracking would silently move testers onto untested binaries.
-  version "1.3.2-personal.4"
-  sha256 "f99e8789fd44f20e43e02cb6b683df12b45726339d53c446f2c6c18547fbc5c1"
+  version "1.3.2-personal.5"
+  sha256 "bd99edeb83278d77546b668a6bf57fd012f509ade9d295a6aa5ba5f187bf8d9a"
 
   url "https://github.com/pszypowicz/ghostty/releases/download/v#{version}/Ghostty-personal-v#{version}.zip"
   name "Ghostty (personal fork)"
