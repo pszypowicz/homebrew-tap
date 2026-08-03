@@ -5,8 +5,8 @@ cask "aerospace-bsp" do
   # users get upgrades on `brew upgrade`. No livecheck because fork releases
   # ship at the author's discretion - auto-tracking would silently move
   # testers onto untested binaries.
-  version "0.21.3-bsp.1"
-  sha256 "eab6285925b345eb8d10dd58194d284f0377671e1bed8f14aeb334971b8390e4"
+  version "0.21.3-bsp.2"
+  sha256 "b8b3ef0c58718f06b4e50aff2ba8bef6221e8f1a86642766a89cc8767f3bd3e0"
 
   url "https://github.com/pszypowicz/AeroSpace/releases/download/v#{version}/AeroSpace-v#{version}.zip"
   name "AeroSpace (BSP fork)"
@@ -26,13 +26,6 @@ cask "aerospace-bsp" do
          target: "#{HOMEBREW_PREFIX}/share/fish/vendor_completions.d/aerospace.fish"
 
   Dir["#{staged_path}/AeroSpace-v#{version}/manpage/*"].each { |man| manpage man }
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/AeroSpace.app"]
-    system_command "/usr/bin/xattr",
-                   args: ["-d", "com.apple.quarantine", "#{staged_path}/AeroSpace-v#{version}/bin/aerospace"]
-  end
 
   uninstall quit:       "bobko.aerospace",
             login_item: "AeroSpace"
