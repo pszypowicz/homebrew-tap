@@ -1,6 +1,6 @@
 cask "sequester" do
-  version "0.2.3"
-  sha256 "f0dd20c3aded1793a5987e2a794073ff672eb449ea87c720e02e98a88be5f360"
+  version "0.2.4"
+  sha256 "da2e94a6a1813200fbf2fd90f5966cf63f513db45d34a28eb85350d56c17709b"
 
   url "https://github.com/pszypowicz/sequester/releases/download/v#{version}/Sequester.zip"
   name "Sequester"
