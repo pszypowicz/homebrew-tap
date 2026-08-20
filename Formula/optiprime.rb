@@ -1,7 +1,6 @@
 class Optiprime < Formula
   desc "Terminal UI for keeping a directory of Azure DevOps repositories in sync"
   homepage "https://github.com/pszypowicz/optiprime"
-  version "0.3.0"
   license "MIT"
 
   on_macos do
