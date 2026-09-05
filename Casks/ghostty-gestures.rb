@@ -31,9 +31,9 @@ cask "ghostty-gestures" do
 
   # Ad-hoc signed builds are quarantined on download and have no Developer ID /
   # notarization, so clear the quarantine flag to let Gatekeeper launch it.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Ghostty.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Ghostty.app"]
   end
 
   uninstall quit: "com.mitchellh.ghostty"

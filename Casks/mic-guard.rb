@@ -16,8 +16,8 @@ cask "mic-guard" do
 
   app "MicGuard.app"
 
-  postflight do
-    system_command "open", args: ["/Applications/MicGuard.app"]
+  postflight_steps do
+    run "/usr/bin/open", args: ["{{appdir}}/MicGuard.app"]
   end
 
   uninstall quit:       "cz.szypowi.micguard",
