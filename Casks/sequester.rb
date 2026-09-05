@@ -16,8 +16,8 @@ cask "sequester" do
 
   app "Sequester.app"
 
-  postflight do
-    system_command "open", args: ["/Applications/Sequester.app"]
+  postflight_steps do
+    run "/usr/bin/open", args: ["{{appdir}}/Sequester.app"]
   end
 
   uninstall quit:       "cz.szypowi.sequester",

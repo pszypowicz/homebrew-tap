@@ -21,8 +21,8 @@ cask "bright-sync" do
   # uninstall.
   binary "#{appdir}/BrightSync.app/Contents/MacOS/BrightSync", target: "brightsync"
 
-  postflight do
-    system_command "open", args: ["-g", "/Applications/BrightSync.app"]
+  postflight_steps do
+    run "/usr/bin/open", args: ["-g", "{{appdir}}/BrightSync.app"]
   end
 
   uninstall quit:       "cz.szypowi.brightsync",
