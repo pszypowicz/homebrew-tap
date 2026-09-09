@@ -17,10 +17,6 @@ cask "pager" do
   app "Pager.app"
   binary "#{appdir}/Pager.app/Contents/MacOS/pager", target: "pager"
 
-  postflight_steps do
-    run "/usr/bin/open", args: ["{{appdir}}/Pager.app"]
-  end
-
   uninstall quit:       "cz.szypowi.pager",
             login_item: "Pager"
 
