@@ -16,10 +16,6 @@ cask "cyclist" do
 
   app "Cyclist.app"
 
-  postflight_steps do
-    run "/usr/bin/open", args: ["{{appdir}}/Cyclist.app"]
-  end
-
   uninstall quit:       "cz.szypowi.cyclist",
             login_item: "Cyclist"
 
