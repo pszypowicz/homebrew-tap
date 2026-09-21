@@ -1,6 +1,6 @@
 cask "cyclist" do
-  version "0.8.4"
-  sha256 "06f6acd4e03bce449fd2626d9a6f20cac3364f7b5d05e49b24c3f89d181adb56"
+  version "1.0.0"
+  sha256 "c3f50658af7a652dfb8591ac9be86511d69983f7be73db8a95024f7039c706ea"
 
   url "https://github.com/pszypowicz/cyclist/releases/download/v#{version}/Cyclist.zip"
   name "Cyclist"
@@ -12,7 +12,7 @@ cask "cyclist" do
     strategy :github_latest
   end
 
-  depends_on macos: :tahoe
+  depends_on macos: :golden_gate
 
   app "Cyclist.app"
 
