@@ -15,6 +15,7 @@ cask "sequester" do
   depends_on macos: :tahoe
 
   app "Sequester.app"
+  binary "#{appdir}/Sequester.app/Contents/MacOS/sequester-cli", target: "sequester"
 
   uninstall quit:       "cz.szypowi.sequester",
             login_item: "Sequester"
