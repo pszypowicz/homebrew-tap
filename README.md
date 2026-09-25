@@ -10,9 +10,10 @@ brew tap pszypowicz/tap
 
 ## Formulae
 
-| Formula         | Description                                                                |
-| --------------- | -------------------------------------------------------------------------- |
-| `afm-summarize` | Summarize stdin into one sentence with Apple's on-device Foundation Models |
+| Formula               | Description                                                                |
+| --------------------- | -------------------------------------------------------------------------- |
+| `afm-summarize`       | Summarize stdin into one sentence with Apple's on-device Foundation Models |
+| `sketchybar-personal` | SketchyBar fork with per-display topmost and fullscreen visibility         |
 
 ### afm-summarize
 
@@ -21,6 +22,16 @@ brew install pszypowicz/tap/afm-summarize
 ```
 
 Requires macOS 26 (Tahoe) or later on Apple Silicon with Apple Intelligence enabled.
+
+### sketchybar-personal
+
+```bash
+brew install pszypowicz/tap/sketchybar-personal
+brew services start sketchybar-personal
+```
+
+Conflicts with the upstream `felixkratz/formulae/sketchybar` formula - uninstall that
+first. The binary is still called `sketchybar`.
 
 ## Casks
 
