@@ -1,9 +1,9 @@
 class SketchybarPersonal < Formula
   desc "SketchyBar fork with per-display topmost and fullscreen visibility"
   homepage "https://github.com/pszypowicz/SketchyBar"
-  url "https://github.com/pszypowicz/SketchyBar/archive/refs/tags/v2.24.1-personal.1.tar.gz"
-  version "2.24.1-personal.1"
-  sha256 "c622a22ec1920e81e36ada4f565685dfbddcb590506e3ba4bda40e421f88d329"
+  url "https://github.com/pszypowicz/SketchyBar/archive/refs/tags/v2.24.1-personal.2.tar.gz"
+  version "2.24.1-personal.2"
+  sha256 "795f9c861530af1f30140a7e40ff4d42fb887fb1a1c8df49dbb59d829248292c"
   license "GPL-3.0-only"
 
   # Built from the personal branch of the fork, which carries the patches
