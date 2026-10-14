@@ -32,8 +32,8 @@ cask "ghostty-personal" do
 
   app "Ghostty-personal-v#{version}/Ghostty.app"
   bash_completion "#{appdir}/Ghostty.app/Contents/Resources/bash-completion/completions/ghostty.bash"
-  fish_completion "#{appdir}/Ghostty.app/Contents/Resources/fish/vendor_completions.d/ghostty.fish"
   zsh_completion "#{appdir}/Ghostty.app/Contents/Resources/zsh/site-functions/_ghostty"
+  fish_completion "#{appdir}/Ghostty.app/Contents/Resources/fish/vendor_completions.d/ghostty.fish"
 
   uninstall quit: "cz.szypowi.ghostty"
 
