@@ -26,8 +26,8 @@ cask "ghostty-gestures" do
 
   app "Ghostty-gestures-v#{version}/Ghostty.app"
   bash_completion "#{appdir}/Ghostty.app/Contents/Resources/bash-completion/completions/ghostty.bash"
-  fish_completion "#{appdir}/Ghostty.app/Contents/Resources/fish/vendor_completions.d/ghostty.fish"
   zsh_completion "#{appdir}/Ghostty.app/Contents/Resources/zsh/site-functions/_ghostty"
+  fish_completion "#{appdir}/Ghostty.app/Contents/Resources/fish/vendor_completions.d/ghostty.fish"
 
   # Ad-hoc signed builds are quarantined on download and have no Developer ID /
   # notarization, so clear the quarantine flag to let Gatekeeper launch it.
