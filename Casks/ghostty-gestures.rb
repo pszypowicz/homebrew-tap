@@ -14,6 +14,9 @@ cask "ghostty-gestures" do
   desc "Ghostty terminal fork with config-driven trackpad gestures"
   homepage "https://github.com/pszypowicz/ghostty"
 
+  deprecate! date: "2026-10-29", because: "is replaced by the notarized ghostty-personal cask",
+             replacement_cask: "ghostty-personal"
+
   # Ad-hoc signed fork, so no Sparkle auto-updates. It also shares the
   # com.mitchellh.ghostty bundle id, so it cannot coexist with the official
   # Ghostty casks - install one or the other.
