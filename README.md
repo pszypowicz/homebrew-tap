@@ -49,7 +49,8 @@ Decodes the gesture escape sequences sent by `ghostty-personal` into keys you ca
 | `cyclist`          | Text-only Cmd+Tab app switcher with instant Space navigation                             |
 | `ghostty-gestures` | Ghostty terminal fork with configurable trackpad gestures (pinch, two-finger double-tap) |
 | `ghostty-personal` | Ghostty terminal fork with trackpad gestures and gesture reporting (DEC 2035)            |
-| `mic-guard`        | Prevents Bluetooth devices from hijacking the default macOS microphone                   |
+| `micguard`         | Prevents Bluetooth devices from hijacking the default macOS microphone                   |
+| `micguard@beta`    | MicGuard release candidates                                                              |
 | `pager`            | Click-to-focus, self-clearing notifications for tmux                                     |
 | `sequester`        | Secure Enclave SSH agent                                                                 |
 
@@ -91,11 +92,13 @@ brew install --cask ghostty-personal
 
 Ghostty fork with config-driven trackpad gestures (pinch, two-finger double-tap, swipes) and gesture reporting, which `tmux-gestures` turns into bindable keys. Conflicts with the official `ghostty` and `ghostty@tip` casks and with `ghostty-gestures`, because they all install `Ghostty.app` - uninstall those first. The in-app updater is compiled out, so updates come through `brew upgrade`.
 
-### mic-guard
+### micguard
 
 ```bash
-brew install --cask mic-guard
+brew install --cask micguard
 ```
+
+Release candidates ship as `micguard@beta`. It conflicts with `micguard`, because both install `MicGuard.app`, so uninstall one before installing the other. Settings carry over between the two. Installs of the old `mic-guard` cask move to `micguard` on the next `brew update`.
 
 ### pager
 
