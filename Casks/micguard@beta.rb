@@ -1,6 +1,6 @@
 cask "micguard@beta" do
-  version "0.20.0-rc.1"
-  sha256 "c2a6551606c4e15729013aaaa7fd260ba3f171de8be5311f349b28f15e58f7e4"
+  version "1.0.0"
+  sha256 "b35e3f58aa5b1b0b2b83cd350f7a4c263652224026d116256a86f4e3c66b2ef9"
 
   url "https://github.com/pszypowicz/MicGuard/releases/download/v#{version}/MicGuard.zip"
   name "MicGuard"
