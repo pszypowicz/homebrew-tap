@@ -7,13 +7,14 @@ cask "micguard@beta" do
   desc "Prevents Bluetooth devices from hijacking the default microphone"
   homepage "https://github.com/pszypowicz/MicGuard"
 
-  # Follows the newest release, pre-releases included.
+  # Follows release candidates only. Between them it stays on the last one
+  # shipped, and stable releases go to the micguard cask.
   livecheck do
     url :url
-    regex(/^v?(\d+(?:\.\d+)+(?:-(?:alpha|beta|rc)\.\d+)?)$/i)
+    regex(/^v?(\d+(?:\.\d+)+-(?:alpha|beta|rc)\.\d+)$/i)
     strategy :github_releases do |json, regex|
       json.map do |release|
-        next if release["draft"]
+        next if release["draft"] || !release["prerelease"]
 
         match = release["tag_name"]&.match(regex)
         next if match.blank?

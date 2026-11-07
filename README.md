@@ -98,7 +98,7 @@ Ghostty fork with config-driven trackpad gestures (pinch, two-finger double-tap,
 brew install --cask micguard
 ```
 
-Release candidates ship as `micguard@beta`. It conflicts with `micguard`, because both install `MicGuard.app`, so uninstall one before installing the other. Settings carry over between the two.
+Release candidates ship as `micguard@beta`. It moves only when a release candidate comes out, so switch back to `micguard` once that release ships as stable. It conflicts with `micguard`, because both install `MicGuard.app`, so uninstall one before installing the other. Settings carry over between the two.
 
 `micguard` was called `mic-guard`. The `brew update` that brings the rename moves an existing install over if Homebrew trusts the new name, through `brew trust pszypowicz/tap` or per cask. If you trusted only the `mic-guard` cask, trust the new name and migrate:
 
