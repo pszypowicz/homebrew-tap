@@ -13,7 +13,6 @@ brew tap pszypowicz/tap
 | Formula         | Description                                                                |
 | --------------- | -------------------------------------------------------------------------- |
 | `afm-summarize` | Summarize stdin into one sentence with Apple's on-device Foundation Models |
-| `optiprime`     | Terminal UI for keeping a directory of Azure DevOps repositories in sync   |
 | `tmux-gestures` | tmux fork with trackpad gesture reporting (DEC 2035)                       |
 
 ### afm-summarize
@@ -23,14 +22,6 @@ brew install pszypowicz/tap/afm-summarize
 ```
 
 Requires macOS 26 (Tahoe) or later on Apple Silicon with Apple Intelligence enabled.
-
-### optiprime
-
-```bash
-brew install pszypowicz/tap/optiprime
-```
-
-Prebuilt for macOS and Linux on both arm64 and amd64.
 
 ### tmux-gestures
 
@@ -51,6 +42,7 @@ Decodes the gesture escape sequences sent by `ghostty-personal` into keys you ca
 | `ghostty-personal` | Ghostty terminal fork with trackpad gestures and gesture reporting (DEC 2035)            |
 | `micguard`         | Prevents Bluetooth devices from hijacking the default macOS microphone                   |
 | `micguard@beta`    | MicGuard release candidates                                                              |
+| `optiprime`        | Terminal UI for keeping a directory of Azure DevOps repositories in sync                 |
 | `pager`            | Click-to-focus, self-clearing notifications for tmux                                     |
 | `sequester`        | Secure Enclave SSH agent                                                                 |
 
@@ -105,6 +97,22 @@ Release candidates ship as `micguard@beta`. It moves only when a release candida
 ```bash
 brew trust --cask pszypowicz/tap/micguard
 brew migrate --cask mic-guard
+```
+
+### optiprime
+
+```bash
+brew install --cask optiprime
+```
+
+Prebuilt for macOS and Linux on both arm64 and amd64. The binary is not notarized, so the cask removes the macOS quarantine flag after install.
+
+`optiprime` used to be a formula. The `brew update` that brings the cask moves an existing formula install over if Homebrew trusts the cask, through `brew trust pszypowicz/tap` or per cask. If it doesn't, trust the cask and switch by hand:
+
+```bash
+brew trust --cask pszypowicz/tap/optiprime
+brew uninstall --formula optiprime
+brew install --cask optiprime
 ```
 
 ### pager
