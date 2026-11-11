@@ -5,21 +5,21 @@ class Optiprime < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pszypowicz/optiprime/releases/download/v0.3.0/optiprime_0.3.0_darwin_arm64.tar.gz"
-      sha256 "c7cdd669c46f3e4d87738af8ed9f0dbebfb6e951cb8292ba48d379d29027aa32"
+      url "https://github.com/pszypowicz/optiprime/releases/download/v0.5.0/optiprime_0.5.0_darwin_arm64.tar.gz"
+      sha256 "53f10fade6c8521522f0f1716cb9196f03d4373abe1f13fd01b30d82ce06cebe"
     else
-      url "https://github.com/pszypowicz/optiprime/releases/download/v0.3.0/optiprime_0.3.0_darwin_amd64.tar.gz"
-      sha256 "0dd23e18ed5599a46a58b08f52ccc118bde3044c58707ada569d33208de101da"
+      url "https://github.com/pszypowicz/optiprime/releases/download/v0.5.0/optiprime_0.5.0_darwin_amd64.tar.gz"
+      sha256 "268bbb01e57936805a384d76e3fcc8eeced9ac30f47a761f888f59efdd241a10"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/pszypowicz/optiprime/releases/download/v0.3.0/optiprime_0.3.0_linux_arm64.tar.gz"
-      sha256 "a4457889ea8eaa500a634cee7ba5b81547a6aed90677d0f2bca5d898044b36da"
+      url "https://github.com/pszypowicz/optiprime/releases/download/v0.5.0/optiprime_0.5.0_linux_arm64.tar.gz"
+      sha256 "bec3d0d15c73ec353be6f542216dfa1f0db3b51d56739cd6098f2bac7b9c46d2"
     else
-      url "https://github.com/pszypowicz/optiprime/releases/download/v0.3.0/optiprime_0.3.0_linux_amd64.tar.gz"
-      sha256 "be3928c73228e1477410fd724f596d01fcd98374a7c731bafe947e4e995de9ce"
+      url "https://github.com/pszypowicz/optiprime/releases/download/v0.5.0/optiprime_0.5.0_linux_amd64.tar.gz"
+      sha256 "0c6e0048182a7b3bc1f0da23c37fe51f6049854f9a6f1f0e509dcbd5d2a1a848"
     end
   end
 
